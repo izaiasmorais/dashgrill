@@ -1,14 +1,14 @@
 import {
-	CircleDollarSign,
 	HeartHandshake,
 	Home,
 	PackageSearch,
 	Sandwich,
 	ScrollText,
+	ShoppingCart,
 	Users,
 	Wallet,
 } from "lucide-react";
-import { Item } from "./sidebar-item";
+import { SidebarItem } from "./sidebar-item";
 
 export function Sidebar() {
 	return (
@@ -19,25 +19,33 @@ export function Sidebar() {
 			</h1>
 			<div className="mt-12 flex flex-col gap-1">
 				<span className="text-sm font-semibold mb-1">GENERAL</span>
-				<Item title="Dashboard" href="/" icon={<Home size={20} />} />
-				<Item title="Sales" href="/sales" icon={<Wallet size={20} />} />
-				<Item title="Clients" href="/clients" icon={<Users size={20} />} />
-				<Item
+				<SidebarItem title="Dashboard" href="/" icon={<Home size={20} />} />
+				<SidebarItem title="Sales" href="/sales" icon={<Wallet size={20} />} />
+				<SidebarItem
+					title="Clients"
+					href="/clients"
+					icon={<Users size={20} />}
+				/>
+				<SidebarItem
 					title="Products"
 					href="/products"
 					icon={<PackageSearch size={20} />}
 				/>
-				<Item
+				<SidebarItem
 					title="Online Store"
 					href="/online-store"
-					icon={<Home size={20} />}
+					icon={<ShoppingCart size={20} />}
 				/>
 			</div>
 
 			<div className="mt-6 flex flex-col gap-1">
 				<span className="text-sm font-semibold mb-1">BOOST</span>
-				<Item title="Coupons" href="/coupons" icon={<ScrollText size={20} />} />
-				<Item
+				<SidebarItem
+					title="Coupons"
+					href="/coupons"
+					icon={<ScrollText size={20} />}
+				/>
+				<SidebarItem
 					title="Loyalty"
 					href="/loyalty"
 					icon={<HeartHandshake size={20} />}
