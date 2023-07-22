@@ -17,7 +17,8 @@ export function Notifications() {
 				<MenubarTrigger className="m-0 py-2 px-[10px] cursor-pointer">
 					<Bell size={20} />
 				</MenubarTrigger>
-				<MenubarContent>
+
+				<MenubarContent className="mr-4">
 					<MenubarItem className="flex justify-between items-center mb-2">
 						<span className="text-lg font-semibold">Your notifications</span>
 						<span className="text-sm text-blue-500 font-medium flex gap-1 items-center">
