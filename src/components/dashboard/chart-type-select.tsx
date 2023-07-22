@@ -1,4 +1,5 @@
 "use client";
+
 import {
 	Select,
 	SelectContent,
@@ -13,7 +14,7 @@ export function ChartTypeSelect() {
 	const update = useStore((state) => state.update);
 	const type = useStore((state) => state.type);
 
-	const types = ["bar", "area", "line", "scatter", "radialBar"];
+	const types = ["line", "bar", "area", "scatter"];
 
 	return (
 		<Select value={type.toLowerCase()} onValueChange={(e) => update(e)}>

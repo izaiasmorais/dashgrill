@@ -2,7 +2,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { Moon, Bell } from "lucide-react";
-import { ThemeSelect } from "./theme-select";
+import { ThemeSwitcher } from "./theme-switcher";
 
 export function Header() {
 	return (
@@ -13,7 +13,7 @@ export function Header() {
 					<Bell color="black" size={20} />
 				</Button>
 
-				<ThemeSelect />
+				<ThemeSwitcher />
 
 				<Avatar>
 					<AvatarImage src="https://github.com/izaiasmorais.png" />
