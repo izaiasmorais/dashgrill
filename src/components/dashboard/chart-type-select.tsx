@@ -17,7 +17,7 @@ export function ChartTypeSelect() {
 	const types = ["line", "area", "bar", "scatter"];
 
 	return (
-		<Select value={type.toLowerCase()} onValueChange={(e) => update(e)}>
+		<Select value={type} onValueChange={(e) => update(e)}>
 			<SelectTrigger className="w-[180px]">
 				<SelectValue placeholder="Chart type" />
 			</SelectTrigger>

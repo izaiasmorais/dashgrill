@@ -4,11 +4,8 @@ export function RecentSalesItem() {
 	return (
 		<div className="flex justify-between mt-4">
 			<div className="flex gap-2 items-center">
-				<Avatar>
-					<AvatarImage
-						className="w-10 h-10 rounded-full"
-						src="https://github.com/diego3g.png"
-					/>
+				<Avatar className="w-10 h-10 rounded-full overflow-hidden">
+					<AvatarImage src="https://github.com/diego3g.png" />
 					<AvatarFallback>DF</AvatarFallback>
 				</Avatar>
 				<div className="flex flex-col justify-start">

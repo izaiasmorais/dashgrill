@@ -10,6 +10,11 @@ const ReactApexChart = dynamic(() => import("react-apexcharts"), {
 
 export default function ProfitChart() {
 	const type = useStore((state) => state.type);
+	const [mounted, setMounted] = useState(false);
+
+	useEffect(() => {
+		setMounted(true);
+	}, [type]);
 
 	const [chartOptions, setChartOptions] = useState<ApexCharts.ApexOptions>({
 		series: [
@@ -21,10 +26,6 @@ export default function ProfitChart() {
 				],
 			},
 		],
-		chart: {
-			height: 350,
-			type,
-		},
 		stroke: {
 			curve: "smooth",
 		},
@@ -55,14 +56,16 @@ export default function ProfitChart() {
 		},
 	});
 
-	return (
-		<div>
-			<ReactApexChart
-				options={chartOptions}
-				series={chartOptions.series}
-				type="line"
-				height={350}
-			/>
-		</div>
-	);
+	if (mounted) {
+		return (
+			<div>
+				<ReactApexChart
+					options={chartOptions}
+					series={chartOptions.series}
+					height={350}
+					type={type}
+				/>
+			</div>
+		);
+	}
 }

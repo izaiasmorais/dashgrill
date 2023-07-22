@@ -12,7 +12,7 @@ import { SidebarItem } from "./sidebar-item";
 
 export function Sidebar() {
 	return (
-		<aside className="h-screen w-[300px] border-r p-4">
+		<aside className="h-screen w-[300px] border-r p-4 hidden md:block">
 			<h1 className="text-2xl font-semibold flex items-center gap-2">
 				<Sandwich />
 				dashgrill

@@ -6,7 +6,7 @@ import { ChartTypeSelect } from "./chart-type-select";
 export function ProfitBox() {
 	return (
 		<Card className="flex-1 flex flex-col p-6 gap-6">
-			<div className="flex justify-between items-center">
+			<div className="flex flex-wrap gap-2 justify-between items-center">
 				<div>
 					<h3 className="font-semibold text-1xl">Profit</h3>
 					<p className="text-sm text-slate-500">

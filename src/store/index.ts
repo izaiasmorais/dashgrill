@@ -1,23 +1,7 @@
 import { create } from "zustand";
 
 interface ChartState {
-	type:
-		| "line"
-		| "area"
-		| "bar"
-		| "pie"
-		| "donut"
-		| "radialBar"
-		| "scatter"
-		| "bubble"
-		| "heatmap"
-		| "candlestick"
-		| "boxPlot"
-		| "radar"
-		| "polarArea"
-		| "rangeBar"
-		| "rangeArea"
-		| "treemap";
+	type: ApexChart["type"];
 	update: (type: string) => void;
 }
 

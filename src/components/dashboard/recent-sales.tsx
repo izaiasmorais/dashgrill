@@ -6,7 +6,7 @@ import { Button } from "../ui/button";
 
 export function RecentSales() {
 	return (
-		<Card className="p-6 pb-3 w-[600px] flex justify-between flex-col">
+		<Card className="p-6 pb-3 w-[600px] flex-1 flex justify-between flex-col">
 			<div>
 				<h3 className="font-semibold text-1xl">Recent Sales</h3>
 				<p className="text-sm text-slate-500">You made 265 sales this month.</p>
