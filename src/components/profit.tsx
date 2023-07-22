@@ -1,6 +1,7 @@
 import Chart from "./area-chart";
 import { YearSelect } from "./year-select";
 import { Card } from "./ui/card";
+import { ChartTypeSelect } from "./chart-type-select";
 
 export function ProfitChart() {
 	return (
@@ -12,7 +13,10 @@ export function ProfitChart() {
 						Your profit in the last 12 months.
 					</p>
 				</div>
-				<YearSelect />
+				<div className="flex gap-2 items-center">
+					<ChartTypeSelect />
+					<YearSelect />
+				</div>
 			</div>
 			<Chart />
 		</Card>

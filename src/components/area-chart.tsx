@@ -1,12 +1,11 @@
 "use client";
 import React, { useEffect } from "react";
 import ApexCharts from "apexcharts";
+import { useStore } from "@/store";
 
-interface ChartProps {
-	type?: string;
-}
+export default function Chart() {
+	const type = useStore((state) => state.type);
 
-export default function Chart({ type = "area" }: ChartProps) {
 	useEffect(() => {
 		const options = {
 			series: [
@@ -21,7 +20,7 @@ export default function Chart({ type = "area" }: ChartProps) {
 			],
 			chart: {
 				height: 350,
-				type,
+				type: type.toLowerCase(),
 			},
 			dataLabels: {
 				enabled: false,
