@@ -14,7 +14,7 @@ export function ChartTypeSelect() {
 	const update = useStore((state) => state.update);
 	const type = useStore((state) => state.type);
 
-	const types = ["line", "bar", "area", "scatter"];
+	const types = ["line", "area", "bar", "scatter"];
 
 	return (
 		<Select value={type.toLowerCase()} onValueChange={(e) => update(e)}>
