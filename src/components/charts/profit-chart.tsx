@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import ApexCharts from "apexcharts";
 import { useStore } from "@/store";
 
-export default function Chart() {
+export default function ProfitChart() {
 	const type = useStore((state) => state.type);
 
 	useEffect(() => {
@@ -20,7 +20,7 @@ export default function Chart() {
 			],
 			chart: {
 				height: 350,
-				type: type.toLowerCase(),
+				type,
 			},
 			dataLabels: {
 				enabled: false,

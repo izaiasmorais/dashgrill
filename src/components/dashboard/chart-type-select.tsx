@@ -7,12 +7,13 @@ import {
 	SelectValue,
 } from "@/components/ui/select";
 import { useStore } from "@/store";
+import { uppercaseFirstLetter } from "@/utils/uppercaseFirstLetter";
 
 export function ChartTypeSelect() {
 	const update = useStore((state) => state.update);
 	const type = useStore((state) => state.type);
 
-	const types = ["Bar", "Area", "Line", "Scatter"];
+	const types = ["bar", "area", "line", "scatter", "radialBar"];
 
 	return (
 		<Select value={type.toLowerCase()} onValueChange={(e) => update(e)}>
@@ -23,7 +24,7 @@ export function ChartTypeSelect() {
 			<SelectContent>
 				{types.map((type) => (
 					<SelectItem key={type.toLowerCase()} value={type.toLowerCase()}>
-						{type}
+						{uppercaseFirstLetter(type)}
 					</SelectItem>
 				))}
 			</SelectContent>

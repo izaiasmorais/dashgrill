@@ -1,8 +1,8 @@
 "use client";
-import { Card } from "./ui/card";
+import { Card } from "../ui/card";
 import { RecentSalesItem } from "./recent-sales-item";
 import { ArrowRight } from "lucide-react";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
 export function RecentSales() {
 	return (

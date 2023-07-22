@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Card } from "./ui/card";
+import { Card } from "../ui/card";
 
 interface SummaryCardProps {
 	title: string;

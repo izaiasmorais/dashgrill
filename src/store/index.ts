@@ -7,7 +7,7 @@ interface ChartState {
 
 export const useStore = create<ChartState>((set) => {
 	return {
-		type: "Area",
+		type: "line",
 
 		update: (type: string) => {
 			set({ type });

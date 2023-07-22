@@ -1,9 +1,9 @@
-import Chart from "./area-chart";
+import ProfitChart from "../charts/profit-chart";
 import { YearSelect } from "./year-select";
-import { Card } from "./ui/card";
+import { Card } from "../ui/card";
 import { ChartTypeSelect } from "./chart-type-select";
 
-export function ProfitChart() {
+export function ProfitBox() {
 	return (
 		<Card className="flex-1 flex flex-col p-6 gap-6">
 			<div className="flex justify-between items-center">
@@ -18,7 +18,7 @@ export function ProfitChart() {
 					<YearSelect />
 				</div>
 			</div>
-			<Chart />
+			<ProfitChart />
 		</Card>
 	);
 }
