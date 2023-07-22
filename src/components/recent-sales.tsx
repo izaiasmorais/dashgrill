@@ -8,7 +8,7 @@ export function RecentSales() {
 	return (
 		<Card className="p-6 w-[600px]">
 			<h3 className="font-semibold text-1xl">Recent Sales</h3>
-			<p className="font-sm text-slate-500">You made 265 sales this month.</p>
+			<p className="text-sm text-slate-500">You made 265 sales this month.</p>
 
 			<div className="flex flex-col gap-2">
 				<RecentSalesItem />

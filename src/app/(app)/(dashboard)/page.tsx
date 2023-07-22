@@ -1,3 +1,4 @@
+import { ProfitChart } from "@/components/profit";
 import { RecentSales } from "@/components/recent-sales";
 import { Summary } from "@/components/summary";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -13,8 +14,8 @@ export default function Dashboard() {
 
 				<TabsContent value="this" className="flex flex-col gap-6">
 					<Summary />
-					<div className="flex">
-						<div className="flex-1"></div>
+					<div className="flex gap-6">
+						<ProfitChart />
 						<RecentSales />
 					</div>
 				</TabsContent>
